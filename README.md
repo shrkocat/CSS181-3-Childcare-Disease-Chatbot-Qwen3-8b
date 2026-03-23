@@ -1,4 +1,6 @@
-# 🏥 RAG Chatbot for Communicable Disease Query Answering in Childcare Settings
+<div align="center">
+    
+# RAG Chatbot for Communicable Disease Query Answering in Childcare Settings
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
@@ -8,9 +10,11 @@
 ![Gradio](https://img.shields.io/badge/Gradio-F97316?style=for-the-badge&logo=gradio&logoColor=white)
 ![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black)
 
+</div>
+
 ---
 
-## 📌 Overview
+## Overview
 
 This project implements a **Retrieval-Augmented Generation (RAG) chatbot** designed to assist childcare providers in answering questions about communicable diseases. The system is grounded in the **NH Disease Handbook for Childcare Providers** published by the New Hampshire Department of Health and Human Services (DHHS), covering over 40 communicable diseases commonly encountered in childcare settings.
 
@@ -18,7 +22,7 @@ Rather than relying on a standalone LLM that may hallucinate medical facts, this
 
 ---
 
-## 👥 Authors
+## Authors
 
 | Name | Email |
 |---|---|
@@ -30,7 +34,7 @@ Rather than relying on a standalone LLM that may hallucinate medical facts, this
 
 ---
 
-## 🎯 Features
+## Features
 
 - **RAG Pipeline** — retrieves relevant disease context before generating answers, minimizing hallucination
 - **Falcon-7B-Instruct** — 4-bit NF4 quantized for efficient inference on Google Colab T4 GPU (~5GB VRAM)
@@ -42,7 +46,7 @@ Rather than relying on a standalone LLM that may hallucinate medical facts, this
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 User Query
@@ -65,7 +69,7 @@ Grounded Answer
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | Component | Tool |
 |---|---|
@@ -79,7 +83,7 @@ Grounded Answer
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -101,7 +105,7 @@ pip install transformers==4.45.0 accelerate bitsandbytes sentence-transformers f
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 | Property | Value |
 |---|---|
@@ -114,7 +118,7 @@ pip install transformers==4.45.0 accelerate bitsandbytes sentence-transformers f
 
 ---
 
-## 🧪 Evaluation
+## Evaluation
 
 The system was evaluated on a **53-question benchmark dataset** across five difficulty tiers:
 
@@ -134,7 +138,7 @@ The system was evaluated on a **53-question benchmark dataset** across five diff
 
 ---
 
-## 📄 Related Paper
+## Related Paper
 
 > Celles, A. K. M., Leviste, L. R. A., & Santeco, E. S. — *Retrieval-Augmented Generation for Communicable Disease Query Answering in Childcare Settings* — CSS181-3, Mapua University
 
@@ -144,6 +148,6 @@ The system was evaluated on a **53-question benchmark dataset** across five diff
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This chatbot is intended as a **reference tool for non-clinical childcare providers only**. It does not replace professional medical advice. The system is strictly scoped to the NH Disease Handbook and will decline questions outside its coverage.
